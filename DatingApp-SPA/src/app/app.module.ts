@@ -1,9 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ValueComponent } from './value/value.component';
+import { from } from 'rxjs';
 
 @NgModule({
    declarations: [
@@ -16,9 +17,7 @@ import { ValueComponent } from './value/value.component';
    ],
    providers: [],
    bootstrap: [
-      AppComponent,
-      HttpClientModule,
-      HttpClient
+      AppComponent
    ]
 })
 export class AppModule { }
